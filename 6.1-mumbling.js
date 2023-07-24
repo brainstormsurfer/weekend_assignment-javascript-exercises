@@ -1,14 +1,11 @@
 function mumbling(str) {
     let newArr = str.split('')
-    let charToCompare = ""
     let newStr = ""
     let isHeadOfChain = true
     let isZed = false
     let count = 1
 
     newArr.forEach((char) => {
-        charToCompare = char
-
         if (char === "z") {
             isZed = true
             count--
