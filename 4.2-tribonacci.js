@@ -9,7 +9,6 @@ const fibonacci = (n, zeroOrOneBase) => {
         return [0, 0, null]
     }
 
-
     let fibonArrci = []
     sum = 1
     let tempA = zeroOrOneBase
@@ -26,7 +25,6 @@ const fibonacci = (n, zeroOrOneBase) => {
         tempA = tempB
         tempB = tempC
         tempC = sum
-
     }
     return fibonArrci.join(',')
 }

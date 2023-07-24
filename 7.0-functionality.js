@@ -1,4 +1,4 @@
-Balloon = {
+const Balloon = {
     color: "",
     owner: "",
     goodbyeCause: ""
@@ -12,9 +12,7 @@ let fiveBalloons = [
     { color: "Red", owner: "Alon" }
 ]
 
-console.log("There were five balloons: ", fiveBalloons)
-console.log("\n-----------------------------")
-
+console.log("Once upon a time, there were FIVE BALOONS: ", fiveBalloons)
 let reasons = []
 fiveBalloons.forEach((el) => {
     if (el.owner === "Rutty") {
@@ -30,10 +28,9 @@ fiveBalloons.forEach((el) => {
     }
     reasons.push(el.goodbyeCause)
 })
+console.log("\n--- (using forEach) ---\n")
 
-console.log("--- forEach ---")
 console.log("Each Balloon had a different reason of which it caused some sorrow to a child: ", reasons)
-
 let usualSuspects = fiveBalloons.map((el) => {
     if (el.goodbyeCause.includes("hugging")) {
         return el.guilty = "Rutty's exaggerated concern"
@@ -49,17 +46,15 @@ let usualSuspects = fiveBalloons.map((el) => {
     console.log("el.guilty", el.guilty)
     reasons.push(el.guilty)
 })
-console.log("--- map ---")
+console.log("\n--- (using map) ---\n")
 console.log("...And a different suspect: ", usualSuspects)
-console.log("\n-----------------------------")
-
 
 const canOnlyBlameThemselves = fiveBalloons.filter((el) => {
     return el.guilty.includes(el.owner)
 })
-console.log("--- filter ---")
-console.log("Those who can only blame themselves for their balloon's bitter end: ", canOnlyBlameThemselves)
-console.log("\n-----------------------------")
+console.log("\n--- (using filter) ---\n")
+console.log("Those who can only blame themselves for their balloon's bitter end, are: ", canOnlyBlameThemselves)
+console.log("\n----- T H E --- E N D -----\n")
 
 
 

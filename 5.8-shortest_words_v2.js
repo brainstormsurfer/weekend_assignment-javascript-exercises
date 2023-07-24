@@ -21,7 +21,5 @@ const longestString = (strings) => {
 }
 
 console.log(longestString("let's    put some   spaces be   twin - brothers"))
-
 console.log(longestString("same cool size"))
-
 console.log(longestString("i will never cheat"))

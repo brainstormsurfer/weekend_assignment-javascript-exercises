@@ -1,4 +1,3 @@
-
 const checkIsogram = (str) => {
     str = str.toLowerCase()
     let testingStr = ""
@@ -9,8 +8,6 @@ const checkIsogram = (str) => {
     }
     return true
 }
-
-
 
 console.log(checkIsogram("Dermatoglyphics"))
 console.log(checkIsogram("aba"))

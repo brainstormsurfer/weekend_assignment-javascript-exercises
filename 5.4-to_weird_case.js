@@ -15,10 +15,9 @@ const toWeirdCase = (str) => {
     } else {
         return `this function receive only letters`
     }
-
 }
 
-console.log(toWeirdCase("I 5ov3 Num83r5"))
+console.log(toWeirdCase("I 1ov3 Num83r5"))
 console.log(toWeirdCase("whats up with you all"))
 console.log(toWeirdCase("deep       DEEP         s p A c e"))
 

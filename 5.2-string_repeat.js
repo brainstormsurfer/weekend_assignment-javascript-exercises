@@ -4,9 +4,7 @@ const repeatString = (count, str) => {
         multipliedStr += str
         count--
     }
-
     return multipliedStr
-
 }
 
 console.log(repeatString(6, "l"))
