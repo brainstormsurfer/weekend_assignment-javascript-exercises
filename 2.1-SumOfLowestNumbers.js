@@ -1,7 +1,5 @@
-// 2 versions :
-// manually (self-challenged) and short (framework's library) 
-
-function sumOfLowest(arr) {
+// ver.1
+const sumOfLowest = (arr) => {
     let min1 = arr[0]
     let min2 = arr[1]
     arr.forEach(function (num) {
@@ -19,7 +17,8 @@ console.log(sumOfLowest([19, 5, 42, 2, 77]))
 console.log(sumOfLowest([5, 10, 3, 2, 0]))
 
 
-function sumOfLowestShort(arr) {
+// ver.2
+const sumOfLowestShort = (arr) => {
     let min1 = Math.min(...(arr))
     arr.splice(arr.indexOf(min1), 1)
     let min2 = Math.min(...(arr))

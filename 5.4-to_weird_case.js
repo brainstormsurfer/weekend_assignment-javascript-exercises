@@ -1,4 +1,4 @@
-function toWeirdCase(str) {
+const toWeirdCase = (str) => {
     let weirdString = ""
     let letterOnly = (/^[A-Za-z\s]*$/)
     if (letterOnly.test(str)) {

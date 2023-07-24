@@ -1,8 +1,8 @@
-function fibonacci(n, zeroOrOneBase) {
+const fibonacci = (n, zeroOrOneBase) => {
     if (zeroOrOneBase > 1 || zeroOrOneBase < 0) {
         return 'Please enter 0 or 1 as the starting value of the series'
     }
-    if (n === null || n === NaN || n === undefined || typeof (n) !== 'number') {
+    if (n === null || n === isNaN || n === undefined || typeof (n) !== 'number') {
         return `Please enter a valid (positive) NUMBER`
     }
     if (n <= 0) {
@@ -10,25 +10,25 @@ function fibonacci(n, zeroOrOneBase) {
     }
 
 
-    let fibonArrcci = []
+    let fibonArrci = []
     sum = 1
     let tempA = zeroOrOneBase
     let tempB = zeroOrOneBase
     let tempC = 1
     for (let i = zeroOrOneBase; i <= n; i++) {
         if (i === 0) {
-            fibonArrcci.push(i);
-            fibonArrcci.push(i);
+            fibonArrci.push(i);
+            fibonArrci.push(i);
             continue;
         }
         sum = tempA + tempB + tempC
-        fibonArrcci.push(sum)
+        fibonArrci.push(sum)
         tempA = tempB
         tempB = tempC
         tempC = sum
 
     }
-    return fibonArrcci.join(',')
+    return fibonArrci.join(',')
 }
 
 console.log(fibonacci(2, 2))

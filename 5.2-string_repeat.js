@@ -1,4 +1,4 @@
-function repeatString(count, str) {
+const repeatString = (count, str) => {
     let multipliedStr = ""
     while (count > 0) {
         multipliedStr += str

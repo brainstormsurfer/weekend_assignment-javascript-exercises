@@ -1,4 +1,4 @@
-function longestString(strings) {
+const longestString = (strings) => {
     let newArr = strings.split(' ')
     let longest = ""
     let shareLongest = []

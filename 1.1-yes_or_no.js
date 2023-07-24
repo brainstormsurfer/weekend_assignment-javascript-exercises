@@ -1,4 +1,4 @@
-function yesOrNo(tellMeTheTruth) {
+const yesOrNo = (tellMeTheTruth) => {
     return tellMeTheTruth ? "Yes" : "No"
 }
 

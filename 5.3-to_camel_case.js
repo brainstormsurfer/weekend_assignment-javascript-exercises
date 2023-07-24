@@ -1,4 +1,4 @@
-function transformToPascal(str) {
+const transformToPascal = (str) => {
     let newArr = []
     let allStrings = ""
     if (str.indexOf("-") !== -1) {

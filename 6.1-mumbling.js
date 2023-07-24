@@ -1,4 +1,4 @@
-function mumbling(str) {
+const mumbling = (str) => {
     let newArr = str.split('')
     let newStr = ""
     let isHeadOfChain = true

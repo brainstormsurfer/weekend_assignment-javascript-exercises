@@ -1,17 +1,17 @@
-function fibonacci(n, zeroOrOneBase) {
-    let fibonArrcci = []
+const fibonacci = (n, zeroOrOneBase) => {
+    let fibonArrci = []
     sum = 0
     let prev = 1
     for (let i = zeroOrOneBase; i <= n; i++) {
         if (i === 0) {
-            fibonArrcci.push(i);
+            fibonArrci.push(i);
             continue;
         }
         sum = sum + prev
-        fibonArrcci.push(sum)
+        fibonArrci.push(sum)
         prev = sum - prev
     }
-    return fibonArrcci.join(',')
+    return fibonArrci.join(',')
 }
 
 let zeroOrOneBase = 0

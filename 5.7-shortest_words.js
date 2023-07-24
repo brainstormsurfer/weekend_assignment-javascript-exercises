@@ -1,4 +1,4 @@
-function shortestString(strings) {
+const shortestString = (strings) => {
     let newArr = strings.split(' ')
     let shortest = ""
     let shareShortest = []
@@ -16,31 +16,14 @@ function shortestString(strings) {
                 shortest = word
             }
         } else if (word.toUpperCase() === "I") {
-            console.log("...(cough cough)..Cheater");
+            console.log("'I' as a word..!? (cough cough...cheater)");
             arr.length = idx + 1
+            shortest = word
         }
     })
-    console.log(shareShortest.length > 1 ? shareShortest : shortest)
+    console.log(`Shortest word${shareShortest.length > 1 ? "s: " + shareShortest : ": " + shortest}`)
     return shortest.length > 1 ? shortest.length : 1
 }
 console.log(shortestString("let's    put some   spaces be   twin - brothers"))
 console.log(shortestString("same cool size"))
 console.log(shortestString("i will never cheat"))
-
-
-
-/*
- // console.log("HO",strings.charAt(i))
-        if (strings.charAt(i) !== ' ') {
-            newArr.push(strings[i])
-        } else if (first) {
-            // console.log("HEY")
-            shortest = newArr.join('')
-            newArr = []
-            first = false
-        } else if (shortest.length > newArr.join('').length && newArr.join!==('')) {
-            shortest = newArr.join('')
-                console.log("shortest", shortest)
-            }
-
-*/

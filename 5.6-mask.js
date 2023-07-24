@@ -1,4 +1,4 @@
-function muskify(strToHide) {
+const muskify = (strToHide) => {
 
     for (let i = 0; i < strToHide.length - 4; i++) {
         strToHide = strToHide.replace(strToHide[i], "#")

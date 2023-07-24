@@ -1,4 +1,4 @@
-function duplicatesCounter(str) {
+const duplicatesCounter = (str) => {
   let literalResult = `${str}:` + "\n";
   let counter = 1;
   let dupliChars = [,];

@@ -1,4 +1,4 @@
-function findPerimeter(length, width){
+const findPerimeter = (length, width) => {
     return (length+width)*2
 }
 

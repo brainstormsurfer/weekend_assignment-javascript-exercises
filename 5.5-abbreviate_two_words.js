@@ -1,4 +1,4 @@
-function twoInitials(str) {
+const twoInitials = (str) => {
     let newArr = str.split(' ')
     return newArr[0].charAt(0).toUpperCase() + "." + newArr[1].charAt(0).toUpperCase()
 }

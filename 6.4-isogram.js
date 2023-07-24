@@ -1,9 +1,10 @@
-function checkIsogram(str) {
+
+const checkIsogram = (str) => {
     str = str.toLowerCase()
     let testingStr = ""
-    for (let i = 0; i < str.length; i++) {
-        if (!testingStr.includes(str[i])) {
-            testingStr += str[i]
+    for (const char of str) {
+        if (!testingStr.includes(char)) {
+            testingStr += char
         } else return false
     }
     return true
@@ -14,3 +15,4 @@ function checkIsogram(str) {
 console.log(checkIsogram("Dermatoglyphics"))
 console.log(checkIsogram("aba"))
 console.log(checkIsogram("moOse"))
+
